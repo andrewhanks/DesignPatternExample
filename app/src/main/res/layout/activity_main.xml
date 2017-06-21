@@ -27,4 +27,11 @@
         android:layout_margin="5dp"
         android:text="Observer" />
 
+    <Button
+        android:id="@+id/chain_of_responsibility"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:text="Chain of Responsibility" />
+
 </android.support.v7.widget.LinearLayoutCompat>
