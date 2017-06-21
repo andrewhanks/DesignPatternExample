@@ -18,8 +18,7 @@ public class MainActivity extends AppCompatActivity {
         templateButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                TemplateMain templateMain = new TemplateMain();
-                templateMain.start();
+                TemplateMain.start();
             }
         });
     }
