@@ -5,6 +5,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
+import com.example.andrewhanks.myapplication.memento.MementoMain;
 import com.example.andrewhanks.myapplication.template.TemplateMain;
 
 public class MainActivity extends AppCompatActivity {
@@ -19,6 +20,14 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 TemplateMain.start();
+            }
+        });
+
+        Button mementoButton = (Button) findViewById(R.id.memento);
+        mementoButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                MementoMain.start();
             }
         });
     }
