@@ -6,6 +6,7 @@ import android.view.View;
 import android.widget.Button;
 
 import com.example.andrewhanks.myapplication.chainofresponsibility.ChainOfResponsibilityMain;
+import com.example.andrewhanks.myapplication.command.CommandMain;
 import com.example.andrewhanks.myapplication.memento.MementoMain;
 import com.example.andrewhanks.myapplication.observer.ObserverMain;
 import com.example.andrewhanks.myapplication.template.TemplateMain;
@@ -46,6 +47,14 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 ChainOfResponsibilityMain.start();
+            }
+        });
+
+        Button commandButton = (Button) findViewById(R.id.command);
+        commandButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                CommandMain.start();
             }
         });
     }
