@@ -8,6 +8,7 @@ import android.widget.Button;
 import com.example.andrewhanks.myapplication.chainofresponsibility.ChainOfResponsibilityMain;
 import com.example.andrewhanks.myapplication.command.CommandMain;
 import com.example.andrewhanks.myapplication.interpreter.InterpreterMain;
+import com.example.andrewhanks.myapplication.iterator.IteratorMain;
 import com.example.andrewhanks.myapplication.memento.MementoMain;
 import com.example.andrewhanks.myapplication.observer.ObserverMain;
 import com.example.andrewhanks.myapplication.state.StateMain;
@@ -82,6 +83,14 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 InterpreterMain.start();
+            }
+        });
+
+        Button iteratorButton = (Button) findViewById(R.id.iterator);
+        iteratorButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                IteratorMain.start();
             }
         });
     }
