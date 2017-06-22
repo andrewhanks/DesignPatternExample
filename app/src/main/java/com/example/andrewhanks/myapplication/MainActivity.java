@@ -10,6 +10,7 @@ import com.example.andrewhanks.myapplication.command.CommandMain;
 import com.example.andrewhanks.myapplication.memento.MementoMain;
 import com.example.andrewhanks.myapplication.observer.ObserverMain;
 import com.example.andrewhanks.myapplication.state.StateMain;
+import com.example.andrewhanks.myapplication.strategy.StrategyMain;
 import com.example.andrewhanks.myapplication.template.TemplateMain;
 
 public class MainActivity extends AppCompatActivity {
@@ -64,6 +65,14 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 StateMain.start();
+            }
+        });
+
+        Button stragegyButton = (Button) findViewById(R.id.strategy);
+        stragegyButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                StrategyMain.start();
             }
         });
     }
