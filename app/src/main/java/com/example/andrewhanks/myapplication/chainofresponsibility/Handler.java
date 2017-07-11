@@ -35,8 +35,9 @@ class CharacterHandler extends Handler {
     void handle(char c) {
         if (Character.isLetter(c)) {
             System.out.println("Character has been handled");
+        } else {
+            doNext(c);
         }
-        doNext(c);
     }
 }
 
@@ -48,7 +49,8 @@ class DigitHandler extends Handler {
     void handle(char c) {
         if (Character.isDigit(c)) {
             System.out.println("Digit has been handled");
+        } else {
+            doNext(c);
         }
-        doNext(c);
     }
 }
