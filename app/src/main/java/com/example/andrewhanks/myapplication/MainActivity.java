@@ -16,6 +16,7 @@ import com.example.andrewhanks.myapplication.behavioral.state.StateMain;
 import com.example.andrewhanks.myapplication.behavioral.strategy.StrategyMain;
 import com.example.andrewhanks.myapplication.behavioral.template.TemplateMain;
 import com.example.andrewhanks.myapplication.structural.bridge.BridgeMain;
+import com.example.andrewhanks.myapplication.structural.composite.CompositeMain;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -24,6 +25,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        // Structural Patterns
         Button bridgeButton = (Button) findViewById(R.id.bridge);
         bridgeButton.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -32,6 +34,15 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        Button compositeButton = (Button) findViewById(R.id.composite);
+        compositeButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                CompositeMain.start();
+            }
+        });
+
+        // Behavioral Patterns
         Button templateButton = (Button) findViewById(R.id.template);
         templateButton.setOnClickListener(new View.OnClickListener() {
             @Override

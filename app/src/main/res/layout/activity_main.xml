@@ -29,6 +29,13 @@
                 android:layout_margin="5dp"
                 android:text="Bridge" />
 
+            <Button
+                android:id="@+id/composite"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:text="Composite" />
+
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
