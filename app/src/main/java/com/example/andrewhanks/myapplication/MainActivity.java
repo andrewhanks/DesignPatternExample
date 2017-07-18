@@ -20,6 +20,7 @@ import com.example.andrewhanks.myapplication.structural.composite.CompositeMain;
 import com.example.andrewhanks.myapplication.structural.decorator.DecoratorMain;
 import com.example.andrewhanks.myapplication.structural.facade.FacadeMain;
 import com.example.andrewhanks.myapplication.structural.flyweight.FlyweightMain;
+import com.example.andrewhanks.myapplication.structural.proxy.ProxyMain;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -66,6 +67,14 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 FlyweightMain.start();
+            }
+        });
+
+        Button proxyButton = (Button) findViewById(R.id.proxy);
+        proxyButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                ProxyMain.start();
             }
         });
 
