@@ -17,6 +17,7 @@ import com.example.andrewhanks.myapplication.behavioral.strategy.StrategyMain;
 import com.example.andrewhanks.myapplication.behavioral.template.TemplateMain;
 import com.example.andrewhanks.myapplication.structural.bridge.BridgeMain;
 import com.example.andrewhanks.myapplication.structural.composite.CompositeMain;
+import com.example.andrewhanks.myapplication.structural.decorator.DecoratorMain;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -39,6 +40,14 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 CompositeMain.start();
+            }
+        });
+
+        Button decoratorButton = (Button) findViewById(R.id.decorator);
+        decoratorButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                DecoratorMain.start();
             }
         });
 
