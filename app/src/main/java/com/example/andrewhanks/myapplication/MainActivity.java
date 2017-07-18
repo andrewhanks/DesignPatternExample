@@ -19,6 +19,7 @@ import com.example.andrewhanks.myapplication.structural.bridge.BridgeMain;
 import com.example.andrewhanks.myapplication.structural.composite.CompositeMain;
 import com.example.andrewhanks.myapplication.structural.decorator.DecoratorMain;
 import com.example.andrewhanks.myapplication.structural.facade.FacadeMain;
+import com.example.andrewhanks.myapplication.structural.flyweight.FlyweightMain;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -57,6 +58,14 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 FacadeMain.start();
+            }
+        });
+
+        Button flyweightButton = (Button) findViewById(R.id.flyweight);
+        flyweightButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                FlyweightMain.start();
             }
         });
 
