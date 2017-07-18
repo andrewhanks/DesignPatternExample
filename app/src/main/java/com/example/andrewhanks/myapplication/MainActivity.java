@@ -9,6 +9,7 @@ import com.example.andrewhanks.myapplication.chainofresponsibility.ChainOfRespon
 import com.example.andrewhanks.myapplication.command.CommandMain;
 import com.example.andrewhanks.myapplication.interpreter.InterpreterMain;
 import com.example.andrewhanks.myapplication.iterator.IteratorMain;
+import com.example.andrewhanks.myapplication.mediator.MediatorMain;
 import com.example.andrewhanks.myapplication.memento.MementoMain;
 import com.example.andrewhanks.myapplication.observer.ObserverMain;
 import com.example.andrewhanks.myapplication.state.StateMain;
@@ -91,6 +92,14 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 IteratorMain.start();
+            }
+        });
+
+        Button mediatorButton = (Button) findViewById(R.id.mediator);
+        mediatorButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                MediatorMain.start();
             }
         });
     }
