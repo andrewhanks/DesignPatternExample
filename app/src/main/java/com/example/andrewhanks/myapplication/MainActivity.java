@@ -5,16 +5,17 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
-import com.example.andrewhanks.myapplication.chainofresponsibility.ChainOfResponsibilityMain;
-import com.example.andrewhanks.myapplication.command.CommandMain;
-import com.example.andrewhanks.myapplication.interpreter.InterpreterMain;
-import com.example.andrewhanks.myapplication.iterator.IteratorMain;
-import com.example.andrewhanks.myapplication.mediator.MediatorMain;
-import com.example.andrewhanks.myapplication.memento.MementoMain;
-import com.example.andrewhanks.myapplication.observer.ObserverMain;
-import com.example.andrewhanks.myapplication.state.StateMain;
-import com.example.andrewhanks.myapplication.strategy.StrategyMain;
-import com.example.andrewhanks.myapplication.template.TemplateMain;
+import com.example.andrewhanks.myapplication.behavioral.chainofresponsibility.ChainOfResponsibilityMain;
+import com.example.andrewhanks.myapplication.behavioral.command.CommandMain;
+import com.example.andrewhanks.myapplication.behavioral.interpreter.InterpreterMain;
+import com.example.andrewhanks.myapplication.behavioral.iterator.IteratorMain;
+import com.example.andrewhanks.myapplication.behavioral.mediator.MediatorMain;
+import com.example.andrewhanks.myapplication.behavioral.memento.MementoMain;
+import com.example.andrewhanks.myapplication.behavioral.observer.ObserverMain;
+import com.example.andrewhanks.myapplication.behavioral.state.StateMain;
+import com.example.andrewhanks.myapplication.behavioral.strategy.StrategyMain;
+import com.example.andrewhanks.myapplication.behavioral.template.TemplateMain;
+import com.example.andrewhanks.myapplication.structural.bridge.BridgeMain;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -22,6 +23,14 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        Button bridgeButton = (Button) findViewById(R.id.bridge);
+        bridgeButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                BridgeMain.start();
+            }
+        });
 
         Button templateButton = (Button) findViewById(R.id.template);
         templateButton.setOnClickListener(new View.OnClickListener() {
