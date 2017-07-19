@@ -15,6 +15,8 @@ import com.example.andrewhanks.myapplication.behavioral.observer.ObserverMain;
 import com.example.andrewhanks.myapplication.behavioral.state.StateMain;
 import com.example.andrewhanks.myapplication.behavioral.strategy.StrategyMain;
 import com.example.andrewhanks.myapplication.behavioral.template.TemplateMain;
+import com.example.andrewhanks.myapplication.creational.singleton.Singleton;
+import com.example.andrewhanks.myapplication.creational.singleton.SingletonMain;
 import com.example.andrewhanks.myapplication.structural.adapter.AdapterMain;
 import com.example.andrewhanks.myapplication.structural.bridge.BridgeMain;
 import com.example.andrewhanks.myapplication.structural.composite.CompositeMain;
@@ -29,6 +31,15 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        // Creational Patterns
+        Button singletonButton = (Button) findViewById(R.id.singleton);
+        singletonButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                SingletonMain.start();
+            }
+        });
 
         // Structural Patterns
         Button bridgeButton = (Button) findViewById(R.id.bridge);

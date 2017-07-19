@@ -20,6 +20,20 @@
                 android:layout_height="wrap_content"
                 android:layout_margin="5dp"
                 android:gravity="center"
+                android:text="Creational Patterns" />
+
+            <Button
+                android:id="@+id/singleton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:text="Singleton" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:gravity="center"
                 android:text="Structural Patterns" />
 
             <Button
