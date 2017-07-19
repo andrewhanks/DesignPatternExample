@@ -43,6 +43,13 @@
                 android:layout_margin="5dp"
                 android:text="Builder" />
 
+            <Button
+                android:id="@+id/factory"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:text="Factory" />
+
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
