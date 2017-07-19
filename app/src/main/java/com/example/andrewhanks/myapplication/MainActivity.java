@@ -15,6 +15,7 @@ import com.example.andrewhanks.myapplication.behavioral.observer.ObserverMain;
 import com.example.andrewhanks.myapplication.behavioral.state.StateMain;
 import com.example.andrewhanks.myapplication.behavioral.strategy.StrategyMain;
 import com.example.andrewhanks.myapplication.behavioral.template.TemplateMain;
+import com.example.andrewhanks.myapplication.creational.builder.BuilderMain;
 import com.example.andrewhanks.myapplication.creational.prototype.PrototypeMain;
 import com.example.andrewhanks.myapplication.creational.singleton.Singleton;
 import com.example.andrewhanks.myapplication.creational.singleton.SingletonMain;
@@ -47,6 +48,14 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 PrototypeMain.start();
+            }
+        });
+
+        Button builderButton = (Button) findViewById(R.id.builder);
+        builderButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                BuilderMain.start();
             }
         });
 
