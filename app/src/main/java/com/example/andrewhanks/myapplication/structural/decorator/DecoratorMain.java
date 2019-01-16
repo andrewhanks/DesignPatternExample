@@ -2,12 +2,19 @@ package com.example.andrewhanks.myapplication.structural.decorator;
 
 public class DecoratorMain {
     public static void start() {
-        Meal chickenMeal = new SideDishOne(new FriedChicken());
-        System.out.println("點了：" + chickenMeal.getContent());
-        System.out.println("價格：" + chickenMeal.price());
+        Restaurant restaurant = new Restaurant();
 
-        Meal portMeal = new SideDishOne(new Hamburger());
-        System.out.println("點了：" + portMeal.getContent());
-        System.out.println("價格：" + portMeal.price());
+        SimpleCombo simpleCombo = new SimpleCombo(restaurant);
+
+        System.out.println("簡餐：");
+        simpleCombo.order();
+
+        BusinessLunch businessLunch = new BusinessLunch(restaurant);
+        System.out.println("商業午餐：");
+        businessLunch.order();
+
+        FullCombo fullCombo = new FullCombo(restaurant);
+        System.out.println("全餐：");
+        fullCombo.order();
     }
 }
