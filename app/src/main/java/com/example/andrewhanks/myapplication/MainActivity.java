@@ -1,6 +1,7 @@
 package com.example.andrewhanks.myapplication;
 
-import android.support.v7.app.AppCompatActivity;
+import androidx.appcompat.app.AppCompatActivity;
+
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -18,7 +19,6 @@ import com.example.andrewhanks.myapplication.behavioral.template.TemplateMain;
 import com.example.andrewhanks.myapplication.creational.builder.BuilderMain;
 import com.example.andrewhanks.myapplication.creational.factory.FactoryMain;
 import com.example.andrewhanks.myapplication.creational.prototype.PrototypeMain;
-import com.example.andrewhanks.myapplication.creational.singleton.Singleton;
 import com.example.andrewhanks.myapplication.creational.singleton.SingletonMain;
 import com.example.andrewhanks.myapplication.structural.adapter.AdapterMain;
 import com.example.andrewhanks.myapplication.structural.bridge.BridgeMain;
